@@ -23,7 +23,7 @@ public class UserController {
 	
 	@PostMapping("/users")
 	public User createEmployee(@RequestBody User user) {
-        return userRepository.save(user);
+		return userRepository.save(user);
     	}
 	
 	@GetMapping("/users")
